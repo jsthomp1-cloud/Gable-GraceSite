@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Gable & Grace</title>
+<meta name="description" content="Begin your home. Tell Gable & Grace about your property, vision, anticipated investment, location, and desired timeline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Gable <span>&</span> Grace</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="custom-homes.html">Custom Homes</a></li>
+      <li><a href="renovations.html">Renovations</a></li>
+      <li><a href="wellness-spaces.html">Wellness Spaces</a></li>
+      <li><a href="healthy-homes.html">Healthy Homes</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta active">Begin Your Home</a>
+  </div>
+</header>
+
+<section class="hero small">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Begin Your Home</h1>
+    <p class="lede">Tell us about your property, vision, anticipated investment, location, and desired timeline.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid-2" style="align-items:start;">
+    <div>
+      <span class="eyebrow">Start the Conversation</span>
+      <h2>We'd Love to Hear About Your Project</h2>
+      <p>Whether you're building a custom home, planning a renovation, or dreaming up a wellness retreat, the first step is simply telling us about it. Share as much detail as you'd like &mdash; we'll follow up to schedule a conversation.</p>
+
+      <div style="margin-top:2.5rem;">
+        <p class="small-caps" style="margin-bottom:0.4rem;">Service Area</p>
+        <p style="margin-bottom:1.6rem;">Raleigh, NC &amp; the surrounding Triangle</p>
+        <p class="small-caps" style="margin-bottom:0.4rem;">Email</p>
+        <p style="margin-bottom:1.6rem;"><a href="mailto:hello@gableandgrace.com" style="border-bottom:1px solid var(--brass);">hello@gableandgrace.com</a></p>
+        <p class="small-caps" style="margin-bottom:0.4rem;">Phone</p>
+        <p><a href="tel:+19195550142" style="border-bottom:1px solid var(--brass);">(919) 555-0142</a></p>
+      </div>
+    </div>
+
+    <div class="card" id="contact-card">
+      <form id="contact-form">
+        <div class="form-grid">
+          <div class="full">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="full">
+            <label for="location">Property Location</label>
+            <input type="text" id="location" name="location" placeholder="Address, neighborhood, or land parcel">
+          </div>
+          <div>
+            <label for="project-type">Project Type</label>
+            <select id="project-type" name="project-type">
+              <option value="custom-home">Custom New Home</option>
+              <option value="renovation">Renovation / Remodel</option>
+              <option value="wellness">Wellness Space</option>
+              <option value="other">Not Sure Yet</option>
+            </select>
+          </div>
+          <div>
+            <label for="timeline">Desired Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="0-6">0&ndash;6 months</option>
+              <option value="6-12">6&ndash;12 months</option>
+              <option value="12+">12+ months</option>
+              <option value="exploring">Just Exploring</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="investment">Anticipated Investment</label>
+            <select id="investment" name="investment">
+              <option value="under-500k">Under $500,000</option>
+              <option value="500-1m">$500,000 &ndash; $1M</option>
+              <option value="1-2m">$1M &ndash; $2M</option>
+              <option value="2m-plus">$2M+</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="vision">Tell Us About Your Vision</label>
+            <textarea id="vision" name="vision" placeholder="Share your property, vision, and anything else that matters to your project."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark filled" style="margin-top:1.6rem; cursor:pointer; font-family: var(--font-body);">Submit Inquiry</button>
+      </form>
+      <div id="form-success" style="display:none; text-align:center; padding: 2rem 0;">
+        <h3>Thank You</h3>
+        <p>We've received your inquiry and will be in touch soon to begin the conversation about your home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Gable &amp; Grace</h4>
+        <p style="max-width:38ch; color:var(--greige);">A residential design-build company creating beautiful, timeless homes designed for healthier living throughout Raleigh, NC and the Triangle.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="custom-homes.html">Custom Homes</a></li>
+          <li><a href="renovations.html">Renovations</a></li>
+          <li><a href="wellness-spaces.html">Wellness Spaces</a></li>
+          <li><a href="healthy-homes.html">Healthy Homes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Begin Your Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gable &amp; Grace. Raleigh, North Carolina.</span>
+      <span>Residential Design-Build &middot; Healthy Homes</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+});
+</script>
+
+</body>
+</html>
