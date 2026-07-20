@@ -61,7 +61,7 @@ p { margin: 0 0 1.2em; }
 .container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 6vw;
+  padding: 0 clamp(1.75rem, 6vw, 6rem);
 }
 
 /* ---------- Header / Nav ---------- */
@@ -77,11 +77,11 @@ p { margin: 0 0 1.2em; }
 .nav-wrap {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 1.1rem 6vw;
+  padding: 1.5rem clamp(1.75rem, 6vw, 6rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .logo {
@@ -95,7 +95,7 @@ p { margin: 0 0 1.2em; }
 
 .nav-links {
   display: flex;
-  gap: 2.1rem;
+  gap: 2.6rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -142,14 +142,14 @@ p { margin: 0 0 1.2em; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  padding: 7.5rem 0 6rem;
+  padding: 8rem 0 6.5rem;
   background:
     linear-gradient(160deg, rgba(89,97,79,0.88), rgba(47,49,48,0.72)),
     repeating-linear-gradient(115deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 60px);
   color: var(--ivory);
   text-align: left;
 }
-.hero.small { padding: 5.5rem 0 4.5rem; }
+.hero.small { padding: 6rem 0 5rem; }
 
 .hero .eyebrow { color: var(--greige); }
 .hero h1 { color: var(--ivory); max-width: 16ch; }
@@ -182,7 +182,7 @@ p { margin: 0 0 1.2em; }
 .btn-dark.filled:hover { background: var(--charcoal); border-color: var(--charcoal); }
 
 /* ---------- Sections ---------- */
-section { padding: 6rem 0; }
+section { padding: 7rem 0; }
 .section-alt { background: #EFE9DF; }
 .section-dark { background: var(--charcoal); color: var(--ivory); }
 .section-dark h2, .section-dark h3 { color: var(--ivory); }
@@ -191,7 +191,7 @@ section { padding: 6rem 0; }
 
 .section-head {
   max-width: 62ch;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
 
@@ -199,7 +199,7 @@ section { padding: 6rem 0; }
   width: 56px;
   height: 2px;
   background: var(--brass);
-  margin: 1.4rem 0;
+  margin: 1.6rem 0;
 }
 .center .divider { margin-left: auto; margin-right: auto; }
 
@@ -207,12 +207,12 @@ section { padding: 6rem 0; }
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 3rem;
 }
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
 }
 @media (max-width: 880px) {
@@ -223,7 +223,7 @@ section { padding: 6rem 0; }
 .card {
   background: var(--ivory);
   border: 1px solid var(--greige);
-  padding: 2.4rem 2rem;
+  padding: 2.6rem 2.2rem;
 }
 .card .num {
   font-family: var(--font-display);
@@ -262,7 +262,7 @@ section { padding: 6rem 0; }
   counter-reset: step;
 }
 .process-step {
-  padding: 1.6rem 1.2rem;
+  padding: 1.8rem 1.6rem;
   border-left: 1px solid var(--greige);
   position: relative;
 }
@@ -278,7 +278,7 @@ section { padding: 6rem 0; }
 /* ---------- Lists ---------- */
 .check-list { list-style: none; margin: 0; padding: 0; }
 .check-list li {
-  padding: 0.7rem 0;
+  padding: 0.85rem 0;
   border-bottom: 1px solid var(--greige);
   padding-left: 1.8rem;
   position: relative;
@@ -304,7 +304,7 @@ section { padding: 6rem 0; }
 .blog-list li {
   display: flex;
   gap: 1.5rem;
-  padding: 1.6rem 0;
+  padding: 1.8rem 0;
   border-bottom: 1px solid var(--greige);
   align-items: baseline;
 }
@@ -319,7 +319,7 @@ section { padding: 6rem 0; }
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.6rem;
+  gap: 1.8rem;
 }
 .form-grid .full { grid-column: 1 / -1; }
 @media (max-width: 700px) { .form-grid { grid-template-columns: 1fr; } }
@@ -352,13 +352,13 @@ input:focus, select:focus, textarea:focus {
 .site-footer {
   background: var(--charcoal);
   color: var(--greige);
-  padding: 4rem 0 2rem;
+  padding: 4.5rem 0 2.2rem;
 }
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 2.5rem;
-  margin-bottom: 2.5rem;
+  gap: 3rem;
+  margin-bottom: 2.8rem;
 }
 @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr; } }
 .footer-grid h4 {
@@ -374,7 +374,7 @@ input:focus, select:focus, textarea:focus {
 .footer-links a:hover { color: var(--brass); }
 .footer-bottom {
   border-top: 1px solid #454745;
-  padding-top: 1.6rem;
+  padding-top: 1.8rem;
   font-size: 0.78rem;
   color: var(--taupe);
   display: flex;
