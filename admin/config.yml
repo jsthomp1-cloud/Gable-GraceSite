@@ -44,11 +44,6 @@ collections:
         name: "process"
         fields:
           - {label: "Page HTML", name: "body", widget: "code", output_code_only: true, default_language: "html"}
-      - file: "portfolio.html"
-        label: "Portfolio"
-        name: "portfolio"
-        fields:
-          - {label: "Page HTML", name: "body", widget: "code", output_code_only: true, default_language: "html"}
       - file: "blog.html"
         label: "Journal / Blog"
         name: "blog"
