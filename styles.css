@@ -7,6 +7,7 @@
   --ivory: #EFE9E1;
   --greige: #CDBCAB;
   --taupe: #899481;
+  --sage-deep: #5E6B54;
   --olive: #5D1C34;
   --charcoal: #11100F;
   --brass: #A67D44;
@@ -186,8 +187,15 @@ p { margin: 0 0 1.2em; }
 
 /* ---------- Sections ---------- */
 section { padding: 7rem 0; }
-.section-alt { background: #E4DBCE; }
-.section-sage { background: var(--taupe); color: var(--ivory); }
+.section-alt {
+  background: var(--sage-deep);
+  color: var(--ivory);
+  border-top: 1px solid var(--brass);
+  border-bottom: 1px solid var(--brass);
+}
+.section-alt h2, .section-alt h3 { color: var(--ivory); }
+.section-alt .eyebrow { color: var(--brass); }
+.section-sage { background: var(--sage-deep); color: var(--ivory); }
 .section-sage h2, .section-sage h3 { color: var(--ivory); }
 .section-dark { background: var(--charcoal); color: var(--ivory); }
 .section-dark h2, .section-dark h3 { color: var(--ivory); }
@@ -238,6 +246,9 @@ section { padding: 7rem 0; }
   transition: border-color 0.25s ease;
 }
 .card:hover { border-top-color: var(--brass); }
+.grid-3 .card:nth-child(3n+1) { border-top-color: var(--olive); }
+.grid-3 .card:nth-child(3n+2) { border-top-color: var(--sage-deep); }
+.grid-3 .card:nth-child(3n+3) { border-top-color: var(--brass); }
 .card .num {
   font-family: var(--font-display);
   font-size: 2.4rem;
@@ -247,13 +258,13 @@ section { padding: 7rem 0; }
 
 .swatch-media {
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, var(--taupe) 0%, var(--olive) 100%);
+  background: linear-gradient(135deg, var(--sage-deep) 0%, var(--sage-deep) 48%, var(--brass) 48%, var(--brass) 52%, var(--olive) 52%, var(--olive) 100%);
   border: 1px solid var(--brass);
   position: relative;
   overflow: hidden;
 }
-.swatch-media.dark { background: linear-gradient(135deg, var(--olive), var(--charcoal)); }
-.swatch-media.brass { background: linear-gradient(135deg, var(--brass), var(--taupe)); }
+.swatch-media.dark { background: linear-gradient(135deg, var(--olive) 0%, var(--olive) 48%, var(--brass) 48%, var(--brass) 52%, var(--charcoal) 52%, var(--charcoal) 100%); }
+.swatch-media.brass { background: linear-gradient(135deg, var(--brass) 0%, var(--brass) 48%, var(--ivory) 48%, var(--ivory) 52%, var(--sage-deep) 52%, var(--sage-deep) 100%); }
 .swatch-media::after {
   content: attr(data-label);
   position: absolute;
