@@ -1,15 +1,15 @@
 /* ==========================================================================
    Gable & Grace — Shared Stylesheet
-   Brand: Refined, Warm, Trustworthy, Architectural, Natural, Intentional
+   Palette: REGAL — Davis Humphries Design
    ========================================================================== */
 
 :root {
-  --ivory: #F6F2EC;
-  --greige: #D8D0C4;
-  --taupe: #A79888;
-  --olive: #59614F;
-  --charcoal: #2F3130;
-  --brass: #B08D57;
+  --ivory: #EFE9E1;
+  --greige: #CDBCAB;
+  --taupe: #899481;
+  --olive: #5D1C34;
+  --charcoal: #11100F;
+  --brass: #A67D44;
 
   --font-display: "Cormorant Garamond", serif;
   --font-body: "Jost", "Avenir", "Helvetica Neue", sans-serif;
@@ -69,7 +69,7 @@ p { margin: 0 0 1.2em; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(246, 242, 236, 0.92);
+  background: rgba(239, 233, 225, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--greige);
 }
@@ -146,7 +146,7 @@ p { margin: 0 0 1.2em; }
   position: relative;
   padding: 8rem 0 6.5rem;
   background:
-    linear-gradient(160deg, rgba(89,97,79,0.88), rgba(47,49,48,0.72)),
+    linear-gradient(160deg, rgba(93,28,52,0.88), rgba(17,16,15,0.72)),
     repeating-linear-gradient(115deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 60px);
   color: var(--ivory);
   text-align: left;
@@ -185,7 +185,7 @@ p { margin: 0 0 1.2em; }
 
 /* ---------- Sections ---------- */
 section { padding: 7rem 0; }
-.section-alt { background: #EFE9DF; }
+.section-alt { background: #E4DBCE; }
 .section-dark { background: var(--charcoal); color: var(--ivory); }
 .section-dark h2, .section-dark h3 { color: var(--ivory); }
 .section-olive { background: var(--olive); color: var(--ivory); }
@@ -375,7 +375,7 @@ input:focus, select:focus, textarea:focus {
 .footer-links li { margin-bottom: 0.6rem; font-size: 0.92rem; }
 .footer-links a:hover { color: var(--brass); }
 .footer-bottom {
-  border-top: 1px solid #454745;
+  border-top: 1px solid #2A2724;
   padding-top: 1.8rem;
   font-size: 0.78rem;
   color: var(--taupe);
