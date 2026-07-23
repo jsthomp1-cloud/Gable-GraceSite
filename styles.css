@@ -113,7 +113,7 @@ p { margin: 0 0 1.2em; }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--olive);
+  color: var(--sage-deep);
   border-bottom-color: var(--brass);
 }
 
@@ -126,7 +126,7 @@ p { margin: 0 0 1.2em; }
   white-space: nowrap;
   transition: background 0.25s ease, color 0.25s ease, border-color .25s ease;
 }
-.nav-cta:hover { background: var(--olive); color: var(--ivory); border-color: var(--olive); }
+.nav-cta:hover { background: var(--sage-deep); color: var(--ivory); border-color: var(--sage-deep); }
 
 .nav-toggle { display: none; }
 
@@ -187,14 +187,7 @@ p { margin: 0 0 1.2em; }
 
 /* ---------- Sections ---------- */
 section { padding: 7rem 0; }
-.section-alt {
-  background: var(--sage-deep);
-  color: var(--ivory);
-  border-top: 1px solid var(--brass);
-  border-bottom: 1px solid var(--brass);
-}
-.section-alt h2, .section-alt h3 { color: var(--ivory); }
-.section-alt .eyebrow { color: var(--brass); }
+.section-alt { background: #E4DBCE; }
 .section-sage { background: var(--sage-deep); color: var(--ivory); }
 .section-sage h2, .section-sage h3 { color: var(--ivory); }
 .section-dark { background: var(--charcoal); color: var(--ivory); }
@@ -241,7 +234,7 @@ section { padding: 7rem 0; }
 .card {
   background: var(--ivory);
   border: 1px solid var(--greige);
-  border-top: 3px solid var(--olive);
+  border-top: 3px solid var(--sage-deep);
   padding: 2.6rem 2.2rem;
   transition: border-color 0.25s ease;
 }
@@ -283,7 +276,7 @@ section { padding: 7rem 0; }
 }
 .process-step {
   padding: 1.8rem 1.6rem;
-  border-left: 1px solid var(--olive);
+  border-left: 1px solid var(--sage-deep);
   position: relative;
 }
 .process-step:first-child { border-left: none; }
@@ -350,7 +343,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 0.5rem;
-  color: var(--olive);
+  color: var(--sage-deep);
 }
 
 input, select, textarea {
@@ -365,7 +358,7 @@ input, select, textarea {
 textarea { resize: vertical; min-height: 120px; }
 input:focus, select:focus, textarea:focus {
   outline: none;
-  border-color: var(--olive);
+  border-color: var(--sage-deep);
 }
 
 /* ---------- Footer ---------- */
@@ -373,7 +366,7 @@ input:focus, select:focus, textarea:focus {
   background: var(--charcoal);
   color: var(--greige);
   padding: 4.5rem 0 2.2rem;
-  border-top: 3px solid var(--olive);
+  border-top: 3px solid var(--sage-deep);
 }
 .footer-grid {
   display: grid;
@@ -411,5 +404,5 @@ input:focus, select:focus, textarea:focus {
   text-transform: uppercase;
   font-size: 0.78rem;
   letter-spacing: 0.1em;
-  color: var(--olive);
+  color: var(--sage-deep);
 }
