@@ -214,9 +214,9 @@ section { padding: 7rem 0; }
 .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
 
 .divider {
-  width: 64px;
+  width: 56px;
   height: 2px;
-  background: linear-gradient(90deg, var(--brass), var(--olive));
+  background: var(--brass);
   margin: 1.6rem 0;
 }
 .center .divider { margin-left: auto; margin-right: auto; }
@@ -246,9 +246,6 @@ section { padding: 7rem 0; }
   transition: border-color 0.25s ease;
 }
 .card:hover { border-top-color: var(--brass); }
-.grid-3 .card:nth-child(3n+1) { border-top-color: var(--olive); }
-.grid-3 .card:nth-child(3n+2) { border-top-color: var(--sage-deep); }
-.grid-3 .card:nth-child(3n+3) { border-top-color: var(--brass); }
 .card .num {
   font-family: var(--font-display);
   font-size: 2.4rem;
@@ -258,13 +255,13 @@ section { padding: 7rem 0; }
 
 .swatch-media {
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, var(--sage-deep) 0%, var(--sage-deep) 48%, var(--brass) 48%, var(--brass) 52%, var(--olive) 52%, var(--olive) 100%);
+  background: var(--sage-deep);
   border: 1px solid var(--brass);
   position: relative;
   overflow: hidden;
 }
-.swatch-media.dark { background: linear-gradient(135deg, var(--olive) 0%, var(--olive) 48%, var(--brass) 48%, var(--brass) 52%, var(--charcoal) 52%, var(--charcoal) 100%); }
-.swatch-media.brass { background: linear-gradient(135deg, var(--brass) 0%, var(--brass) 48%, var(--ivory) 48%, var(--ivory) 52%, var(--sage-deep) 52%, var(--sage-deep) 100%); }
+.swatch-media.dark { background: var(--olive); }
+.swatch-media.brass { background: var(--brass); }
 .swatch-media::after {
   content: attr(data-label);
   position: absolute;
