@@ -413,3 +413,6 @@ input:focus, select:focus, textarea:focus {
     linear-gradient(160deg, rgba(93,28,52,0.55), rgba(17,16,15,0.65)),
     url("custom-homes-hero.png") center 15%/cover no-repeat;
 }
+#healthy-homes-photo {
+  background: url("healthy-homes-kitchen.jpg") center/cover no-repeat;
+}
