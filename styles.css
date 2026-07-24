@@ -224,6 +224,7 @@ section { padding: 7rem 0; }
 @media (max-width: 880px) {
   .grid-3 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
+  .section-olive .grid-2 { grid-template-columns: 1fr; }
 }
 
 .card {
