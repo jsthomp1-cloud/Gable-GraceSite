@@ -414,5 +414,5 @@ input:focus, select:focus, textarea:focus {
     url("custom-homes-hero.png") center 15%/cover no-repeat;
 }
 #healthy-homes-photo {
-  background: url("healthy-homes-kitchen.jpg") center/cover no-repeat;
+  background: url("healthy-homes-kitchen.jpg.png") center/cover no-repeat;
 }
