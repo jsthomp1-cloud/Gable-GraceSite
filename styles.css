@@ -90,7 +90,7 @@ p { margin: 0 0 1.2em; }
   align-items: center;
 }
 .logo span { color: var(--brass); }
-.logo-img { height: 42px; width: auto; display: block; }
+.logo-img { height: 68px; width: auto; display: block; }
 
 .nav-links {
   display: flex;
@@ -138,6 +138,7 @@ p { margin: 0 0 1.2em; }
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
+  .logo-img { height: 96px; max-width: 58vw; width: auto; }
 }
 
 /* ---------- Hero ---------- */
