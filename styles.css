@@ -132,32 +132,32 @@ p { margin: 0 0 1.2em; }
 @media (max-width: 880px) {
   .container { padding-left: 1.5rem; padding-right: 1.5rem; }
   .nav-wrap {
-    padding: 0.6rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 0.3rem;
-    gap: 1rem;
+    row-gap: 0.1rem;
+    gap: 0.75rem;
   }
 
   .logo { order: 0; flex: 1 0 100%; justify-content: center; margin: 0; }
-  .logo-img { height: 110px; max-width: 65vw; width: auto; margin: 0 auto; }
+  .logo-img { height: 135px; max-width: 72vw; width: auto; margin: 0 auto; }
 
   .nav-toggle {
     order: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1;
     cursor: pointer;
     color: var(--charcoal);
-    padding: 0.2rem 0.6rem;
+    padding: 0.1rem 0.4rem;
   }
 
   .nav-cta {
     order: 2;
-    font-size: 0.72rem;
-    padding: 0.55rem 1.1rem;
+    font-size: 0.68rem;
+    padding: 0.45rem 0.9rem;
   }
 
   .nav-links {
@@ -167,7 +167,7 @@ p { margin: 0 0 1.2em; }
     flex-direction: column;
     align-items: center;
     gap: 1.1rem;
-    padding: 1.4rem 0 0.4rem;
+    padding: 1rem 0 0.3rem;
     border-top: 1px solid var(--greige);
     text-align: center;
   }
@@ -175,6 +175,9 @@ p { margin: 0 0 1.2em; }
   .nav-toggle-checkbox:checked ~ .nav-links {
     display: flex;
   }
+
+  .hero { padding: 1.5rem 0 2.5rem; }
+  .hero.small { padding: 1.25rem 0 2rem; }
 }
 
 /* ---------- Hero ---------- */
