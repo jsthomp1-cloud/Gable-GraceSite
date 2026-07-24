@@ -177,7 +177,7 @@ p { margin: 0 0 1.2em; }
 
 .btn-dark { border: 1px solid var(--charcoal); color: var(--charcoal); }
 .btn-dark:hover { background: var(--charcoal); color: var(--ivory); }
-.btn-dark.filled { background: var(--sage-deep); border: 1px solid var(--brass); color: var(--ivory); }
+.btn-dark.filled { background: var(--olive); border: 1px solid var(--brass); color: var(--ivory); }
 .btn-dark.filled:hover { background: var(--charcoal); border-color: var(--brass); }
 
 /* ---------- Sections ---------- */
