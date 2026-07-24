@@ -132,11 +132,11 @@ p { margin: 0 0 1.2em; }
 @media (max-width: 880px) {
   .container { padding-left: 1.5rem; padding-right: 1.5rem; }
   .nav-wrap {
-    padding: 0.75rem 1.5rem;
+    padding: 0.2rem 1.5rem 0.75rem;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 0;
-    gap: 0.3rem;
+    gap: 0.05rem;
   }
 
   .logo { order: 0; flex: 1 0 100%; justify-content: center; margin: 0; line-height: 0; }
