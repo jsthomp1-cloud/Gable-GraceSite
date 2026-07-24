@@ -132,7 +132,7 @@ p { margin: 0 0 1.2em; }
 @media (max-width: 880px) {
   .container { padding-left: 1.5rem; padding-right: 1.5rem; }
   .nav-wrap {
-    padding: 0 1.5rem;
+    padding: 0.75rem 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 0;
@@ -140,7 +140,7 @@ p { margin: 0 0 1.2em; }
   }
 
   .logo { order: 0; flex: 1 0 100%; justify-content: center; margin: 0; line-height: 0; }
-  .logo-img { height: 68px; max-width: 60vw; width: auto; margin: 0 auto; display: block; }
+  .logo-img { height: 105px; max-width: 65vw; width: auto; margin: 0 auto; display: block; }
 
   .nav-toggle {
     order: 1;
