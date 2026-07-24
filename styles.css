@@ -140,7 +140,7 @@ p { margin: 0 0 1.2em; }
   }
 
   .logo { order: 0; flex: 1 0 100%; justify-content: center; margin: 0; line-height: 0; }
-  .logo-img { height: 105px; max-width: 65vw; width: auto; margin: 0 auto; display: block; }
+  .logo-img { height: 135px; max-width: 70vw; width: auto; margin: 0 auto; display: block; }
 
   .nav-toggle {
     order: 1;
