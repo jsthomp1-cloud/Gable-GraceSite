@@ -422,6 +422,8 @@ input:focus, select:focus, textarea:focus {
   background: url("healthy-homes-kitchen.jpg.png") center/cover no-repeat;
   aspect-ratio: 1/1;
 }
-.section-olive .grid-2 {
-  grid-template-columns: 0.85fr 1.15fr;
+@media (min-width: 881px) {
+  .section-olive .grid-2 {
+    grid-template-columns: 0.85fr 1.15fr;
+  }
 }
