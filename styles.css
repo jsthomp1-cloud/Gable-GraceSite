@@ -170,8 +170,8 @@ p { margin: 0 0 1.2em; }
   border: 1px solid var(--ivory);
   transition: all 0.25s ease;
 }
-.btn-solid { background: var(--sage-deep); border-color: var(--sage-deep); color: var(--ivory); }
-.btn-solid:hover { background: var(--ivory); border-color: var(--ivory); color: var(--charcoal); }
+.btn-solid { background: var(--brass); border-color: var(--brass); color: var(--charcoal); }
+.btn-solid:hover { background: var(--ivory); border-color: var(--ivory); }
 .btn-outline { color: var(--ivory); }
 .btn-outline:hover { background: var(--ivory); color: var(--charcoal); }
 
