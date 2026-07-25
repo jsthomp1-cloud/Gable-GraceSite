@@ -88,9 +88,12 @@ p { margin: 0 0 1.2em; }
   color: var(--charcoal);
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+  min-width: -webkit-max-content;
+  min-width: max-content;
 }
 .logo span { color: var(--brass); }
-.logo-img { height: 68px; width: auto; display: block; }
+.logo-img { height: 68px; width: auto; min-width: 161px; display: block; flex-shrink: 0; }
 
 .nav-links {
   display: flex;
