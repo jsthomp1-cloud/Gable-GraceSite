@@ -143,8 +143,16 @@ p { margin: 0 0 1.2em; }
   .logo { order: 0; flex: 0 1 auto; margin: 0; line-height: 0; min-width: 0; }
   .logo-img { height: 78px; max-width: 55vw; width: auto; display: block; margin: -8px 0; }
 
-  .nav-toggle {
+  .nav-cta {
     order: 1;
+    font-size: 0.62rem;
+    padding: 0.4rem 0.7rem;
+    margin: 0 0 0 0.75rem;
+    white-space: nowrap;
+  }
+
+  .nav-toggle {
+    order: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,14 +162,6 @@ p { margin: 0 0 1.2em; }
     color: var(--charcoal);
     padding: 0;
     margin: 0 0 0 auto;
-  }
-
-  .nav-cta {
-    order: 2;
-    font-size: 0.62rem;
-    padding: 0.4rem 0.7rem;
-    margin: 0;
-    white-space: nowrap;
   }
 
   .nav-links {
