@@ -141,7 +141,7 @@ p { margin: 0 0 1.2em; }
   }
 
   .logo { order: 0; flex: 0 1 auto; margin: 0; line-height: 0; min-width: 0; }
-  .logo-img { height: 62px; max-width: 50vw; width: auto; display: block; }
+  .logo-img { height: 78px; max-width: 55vw; width: auto; display: block; margin: -8px 0; }
 
   .nav-toggle {
     order: 1;
