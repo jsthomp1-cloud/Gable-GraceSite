@@ -537,6 +537,11 @@ input:focus, select:focus, textarea:focus {
 #about-approach-photo {
   background: url("gable_and_grace_kitchen.png") center/cover no-repeat;
 }
+#hero-about {
+  background:
+    linear-gradient(160deg, rgba(93,28,52,0.55), rgba(17,16,15,0.65)),
+    url("gable_and_grace_bathroom.png") center/cover no-repeat;
+}
 @media (min-width: 881px) {
   .section-olive .grid-2 {
     grid-template-columns: 0.85fr 1.15fr;
