@@ -62,7 +62,11 @@
     </div>
 
     <div class="card" id="contact-card">
-      <form id="contact-form">
+      <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none;">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
         <div class="form-grid">
           <div class="full">
             <label for="name">Full Name</label>
@@ -101,6 +105,8 @@
           <div class="full">
             <label for="investment">Anticipated Investment</label>
             <select id="investment" name="investment">
+              <option value="under-50k">Less than $50,000</option>
+              <option value="under-200k">Less than $200,000</option>
               <option value="under-500k">Under $500,000</option>
               <option value="500-1m">$500,000 &ndash; $1M</option>
               <option value="1-2m">$1M &ndash; $2M</option>
@@ -156,10 +162,31 @@
 </footer>
 
 <script>
+function encodeFormData(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 document.getElementById('contact-form').addEventListener('submit', function(e){
   e.preventDefault();
-  document.getElementById('contact-form').style.display = 'none';
-  document.getElementById('form-success').style.display = 'block';
+  var form = e.target;
+  var formData = new FormData(form);
+  var data = {};
+  formData.forEach(function(value, key){ data[key] = value; });
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encodeFormData(data)
+  })
+  .then(function(){
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  })
+  .catch(function(error){
+    alert("Sorry, something went wrong submitting your inquiry. Please try again or email us directly at hello@gableandgrace.com.");
+  });
 });
 </script>
 
