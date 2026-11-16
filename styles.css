@@ -653,3 +653,19 @@ input:focus, select:focus, textarea:focus {
 #renovations-photo {
   background: url("renovations-bath.jpg") center/cover no-repeat;
 }
+
+#hero-healthy-homes {
+  background:
+    linear-gradient(90deg, rgba(17,16,15,0.75) 0%, rgba(17,16,15,0.5) 45%, rgba(17,16,15,0.1) 85%),
+    url("healthy-homes-hero.jpg") center 55%/cover no-repeat;
+}
+@media (max-width: 880px) {
+  #hero-healthy-homes {
+    background:
+      linear-gradient(180deg, rgba(17,16,15,0.7), rgba(17,16,15,0.52)),
+      url("healthy-homes-hero.jpg") 60% center/cover no-repeat;
+  }
+}
+#healthy-homes-stair {
+  background: url("healthy-homes-stair.jpg") center/cover no-repeat;
+}
