@@ -551,7 +551,7 @@ input:focus, select:focus, textarea:focus {
   }
 }
 #healthy-homes-photo {
-  background: url("healthy-homes-kitchen.jpg.png") center/cover no-repeat;
+  background: url("home-kitchen-courtyard.jpg") center/cover no-repeat;
   aspect-ratio: 1/1;
 }
 #about-approach-photo {
