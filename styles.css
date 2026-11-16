@@ -147,6 +147,7 @@ p { margin: 0 0 1.2em; }
   text-transform: none;
   letter-spacing: normal;
 }
+/* Invisible bridge over the gap so the menu stays open while the cursor moves down */
 .dropdown::before {
   content: "";
   position: absolute;
@@ -155,9 +156,9 @@ p { margin: 0 0 1.2em; }
   top: calc(-0.75rem - 2px);
   height: calc(0.75rem + 2px);
 }
-@media (max-width: 900px) { .dropdown::before { display: none; } }
 .has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown {
+.has-dropdown:focus-within .dropdown,
+.dropdown:hover {
   display: flex;
 }
 .dropdown li a { white-space: nowrap; }
@@ -249,6 +250,7 @@ p { margin: 0 0 1.2em; }
     align-items: center;
     gap: 0.7rem;
   }
+  .dropdown::before { display: none; }
 
   .nav-toggle-checkbox:checked ~ .nav-links {
     display: flex;
