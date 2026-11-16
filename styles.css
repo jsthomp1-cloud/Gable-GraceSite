@@ -621,3 +621,19 @@ input:focus, select:focus, textarea:focus {
       url("process-hero.jpg") 58% center/cover no-repeat;
   }
 }
+
+#hero-wellness {
+  background:
+    linear-gradient(90deg, rgba(17,16,15,0.72) 0%, rgba(17,16,15,0.45) 45%, rgba(17,16,15,0.05) 85%),
+    url("wellness-hero.jpg") center 60%/cover no-repeat;
+}
+@media (max-width: 880px) {
+  #hero-wellness {
+    background:
+      linear-gradient(180deg, rgba(17,16,15,0.68), rgba(17,16,15,0.5)),
+      url("wellness-hero.jpg") 70% center/cover no-repeat;
+  }
+}
+#wellness-photo {
+  background: url("custom-homes-bath.jpg") center/cover no-repeat;
+}
