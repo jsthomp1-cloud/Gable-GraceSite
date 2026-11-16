@@ -598,3 +598,16 @@ input:focus, select:focus, textarea:focus {
 .card-link .eyebrow { margin-bottom: 0.6em; }
 .card-link .read-more { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--brass); }
 .card-link:hover h3 { color: var(--olive); }
+
+#hero-process {
+  background:
+    linear-gradient(90deg, rgba(17,16,15,0.75) 0%, rgba(17,16,15,0.5) 45%, rgba(17,16,15,0.08) 85%),
+    url("process-hero.jpg") center 60%/cover no-repeat;
+}
+@media (max-width: 880px) {
+  #hero-process {
+    background:
+      linear-gradient(180deg, rgba(17,16,15,0.68), rgba(17,16,15,0.5)),
+      url("process-hero.jpg") 58% center/cover no-repeat;
+  }
+}
