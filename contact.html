@@ -29,17 +29,17 @@
         </ul>
       </li>
       <li><a href="blog.html">Blog</a></li>
-      <li class="cta-item"><a href="contact.html">Begin Your Home</a></li>
+      <li class="cta-item"><a href="contact.html">Contact Us</a></li>
     </ul>
     <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">&#9776;</label>
-    <a href="contact.html" class="nav-cta active">Begin Your Home</a>
+    <a href="contact.html" class="nav-cta active">Contact Us</a>
   </div>
 </header>
 
 <section class="hero small">
   <div class="container">
     <span class="eyebrow">Contact</span>
-    <h1>Begin Your Home</h1>
+    <h1>Contact Us</h1>
     <p class="lede">Tell us about your property, vision, anticipated investment, location, and desired timeline.</p>
   </div>
 </section>
@@ -55,7 +55,7 @@
         <p class="small-caps" style="margin-bottom:0.4rem;">Service Area</p>
         <p style="margin-bottom:1.6rem;">Raleigh, NC &amp; the surrounding Triangle</p>
         <p class="small-caps" style="margin-bottom:0.4rem;">Email</p>
-        <p style="margin-bottom:1.6rem;"><a href="mailto:hello@gableandgrace.com" style="border-bottom:1px solid var(--brass);">hello@gableandgrace.com</a></p>
+        <p style="margin-bottom:1.6rem;"><a href="mailto:justine@gableandgracebuilds.com" style="border-bottom:1px solid var(--brass);">justine@gableandgracebuilds.com</a></p>
         <p class="small-caps" style="margin-bottom:0.4rem;">Phone</p>
         <p><a href="tel:+19195550142" style="border-bottom:1px solid var(--brass);">(919) 555-0142</a></p>
       </div>
@@ -150,7 +150,7 @@
         <ul class="footer-links">
           <li><a href="process.html">Our Process</a></li>
           <li><a href="blog.html">Journal</a></li>
-          <li><a href="contact.html">Begin Your Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -180,12 +180,13 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encodeFormData(data)
   })
-  .then(function(){
+  .then(function(res){
+    if (!res.ok) throw new Error("Submit failed: " + res.status);
     document.getElementById('contact-form').style.display = 'none';
     document.getElementById('form-success').style.display = 'block';
   })
   .catch(function(error){
-    alert("Sorry, something went wrong submitting your inquiry. Please try again or email us directly at hello@gableandgrace.com.");
+    alert("Sorry, something went wrong submitting your inquiry. Please try again or email us directly at justine@gableandgracebuilds.com.");
   });
 });
 </script>
