@@ -669,3 +669,34 @@ input:focus, select:focus, textarea:focus {
 #healthy-homes-stair {
   background: url("healthy-homes-stair.jpg") center/cover no-repeat;
 }
+
+/* ---------- Journal photo banners & thumbnails ---------- */
+.photo-hero {
+  background:
+    linear-gradient(90deg, rgba(17,16,15,0.78) 0%, rgba(17,16,15,0.55) 45%, rgba(17,16,15,0.12) 85%),
+    var(--hero-img) center/cover no-repeat;
+}
+@media (max-width: 880px) {
+  .photo-hero {
+    background:
+      linear-gradient(180deg, rgba(17,16,15,0.72), rgba(17,16,15,0.55)),
+      var(--hero-img) center/cover no-repeat;
+  }
+}
+.card-link { padding-top: 0; overflow: hidden; }
+.card-link .card-img {
+  display: block; width: calc(100% + 4.4rem); max-width: none; height: auto;
+  aspect-ratio: 16/9; object-fit: cover;
+  margin: 0 -2.2rem 1.6rem; border-bottom: 1px solid var(--greige);
+}
+.blog-list .b-thumb {
+  width: 176px; height: 99px; object-fit: cover; flex-shrink: 0;
+  align-self: center; border: 1px solid var(--greige);
+}
+.blog-list li a { align-items: center; }
+@media (max-width: 700px) {
+  .blog-list li a { flex-wrap: wrap; gap: 1rem; }
+  .blog-list .b-num { display: none; }
+  .blog-list .b-thumb { width: 100%; height: auto; aspect-ratio: 16/9; }
+  .blog-list .b-arrow { display: none; }
+}
