@@ -147,6 +147,15 @@ p { margin: 0 0 1.2em; }
   text-transform: none;
   letter-spacing: normal;
 }
+.dropdown::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: calc(-0.75rem - 2px);
+  height: calc(0.75rem + 2px);
+}
+@media (max-width: 900px) { .dropdown::before { display: none; } }
 .has-dropdown:hover .dropdown,
 .has-dropdown:focus-within .dropdown {
   display: flex;
