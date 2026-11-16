@@ -538,8 +538,17 @@ input:focus, select:focus, textarea:focus {
 }
 #hero-home {
   background:
-    linear-gradient(160deg, rgba(93,28,52,0.55), rgba(17,16,15,0.65)),
-    url("custom-homes-hero.png") center 15%/cover no-repeat;
+    linear-gradient(90deg, rgba(17,16,15,0.72) 0%, rgba(17,16,15,0.45) 45%, rgba(17,16,15,0.05) 80%),
+    url("home-hero-wide.jpg") center 55%/cover no-repeat;
+}
+@media (max-width: 880px) {
+  #hero-home {
+    background:
+      linear-gradient(180deg, rgba(17,16,15,0.72) 0%, rgba(17,16,15,0.55) 45%, rgba(17,16,15,0) 72%),
+      url("home-hero-mobile.jpg") 62% bottom/cover no-repeat;
+    min-height: calc(100svh - 78px);
+    padding-bottom: 46vh;
+  }
 }
 #healthy-homes-photo {
   background: url("healthy-homes-kitchen.jpg.png") center/cover no-repeat;
