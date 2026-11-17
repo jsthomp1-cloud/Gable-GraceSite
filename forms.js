@@ -20,7 +20,7 @@
         var ok = document.getElementById(form.getAttribute("data-success"));
         if (ok) ok.style.display = "block";
       }).catch(function () {
-        alert("Sorry, something went wrong. Please try again or email us at justine@gableandgracebuilds.com.");
+        alert("Sorry, something went wrong. Please try again or email us at hello@gableandgracebuilds.com.");
       });
     });
   });
