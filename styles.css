@@ -748,3 +748,16 @@ input:focus, select:focus, textarea:focus {
 .faq details[open] summary::after { content: "\2212"; }
 .faq details p { margin: 0.8rem 0 0; }
 .disclaimer { font-size: 0.82rem; opacity: 0.75; max-width: 80ch; margin: 2.5rem auto 0; text-align: center; }
+
+#hero-contact {
+  background:
+    linear-gradient(90deg, rgba(17,16,15,0.78) 0%, rgba(17,16,15,0.55) 45%, rgba(17,16,15,0.1) 85%),
+    url("contact-hero.jpg") center 55%/cover no-repeat;
+}
+@media (max-width: 880px) {
+  #hero-contact {
+    background:
+      linear-gradient(180deg, rgba(17,16,15,0.78), rgba(17,16,15,0.62)),
+      url("contact-hero.jpg") 70% center/cover no-repeat;
+  }
+}
