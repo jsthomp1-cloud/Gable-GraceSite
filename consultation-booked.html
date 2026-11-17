@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Confirmed | Gable & Grace</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Virtual healthy-home consultations from Gable & Grace, anywhere in the world. Get clear guidance on materials, air, water, moisture and EMF before you build or renovate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=25">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo"><img src="Gable_and_grace_logo_transparent.png?v=2" alt="Gable & Grace" class="logo-img"></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li class="has-dropdown">
+        <span class="dropdown-label">Our Expertise</span>
+        <ul class="dropdown">
+          <li><a href="custom-homes.html">Custom Homes</a></li>
+          <li><a href="renovations.html">Renovations</a></li>
+          <li><a href="wellness-spaces.html">Wellness Spaces</a></li>
+          <li><a href="healthy-homes.html">Healthy Homes</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+        </ul>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li class="cta-item"><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">&#9776;</label>
+    <a href="contact.html" class="nav-cta">Contact Us</a>
+  </div>
+</header>
+
+<section class="hero small" id="hero-healthy-homes">
+  <div class="container">
+    <span class="eyebrow">Payment Received</span>
+    <h1>Thank You. Let&rsquo;s Find a Time.</h1>
+    <p class="lede" id="bk-lede">Your payment is complete and a receipt is on its way to your inbox.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container text-center" style="max-width:760px;">
+    <span class="eyebrow" id="bk-eyebrow">Next Step</span>
+    <h2 id="bk-title">Book Your Call</h2>
+    <div class="divider" style="margin-left:auto;margin-right:auto;"></div>
+    <p id="bk-text">Choose a time that works for you. You&rsquo;ll receive a calendar invitation with a video link.</p>
+    <p id="bk-extra" style="display:none;"></p>
+    <a id="bk-button" href="#" class="btn btn-dark filled" style="display:none; margin-top:1rem;">Choose a Time</a>
+    <p id="bk-fallback" style="display:none;">We&rsquo;ll email you within one business day with times to meet.</p>
+    <p style="margin-top:2.5rem; font-size:0.9rem; opacity:0.8;">Questions? Email <a href="mailto:hello@gableandgracebuilds.com">hello@gableandgracebuilds.com</a>.</p>
+  </div>
+</section>
+
+<script>
+// Booking pages for each option. Leave a value empty to show the email fallback instead.
+var BOOKING = {
+  "consultation": "",
+  "plan-review": "",
+  "advisory": ""
+};
+var COPY = {
+  "consultation": { title: "Book Your 60-Minute Consultation", text: "Choose a time that works for you. You'll receive a calendar invitation with a video link and a short questionnaire to complete before we meet." },
+  "plan-review": { title: "Book Your 90-Minute Plan Review", text: "Choose a time at least five business days out so we have time to review everything before we meet.", extra: "Please email your plans, specifications or bids to hello@gableandgracebuilds.com with \"Plan Review\" in the subject line." },
+  "advisory": { title: "Book Your First Advisory Call", text: "Welcome to Healthy Home Advisory. Choose a time for your first 60-minute call, and we'll set your regular schedule from there. Your membership renews monthly." }
+};
+(function () {
+  var type = new URLSearchParams(location.search).get("type") || "consultation";
+  var c = COPY[type] || COPY.consultation;
+  document.getElementById("bk-title").textContent = c.title;
+  document.getElementById("bk-text").textContent = c.text;
+  if (c.extra) { var x = document.getElementById("bk-extra"); x.textContent = c.extra; x.style.display = "block"; }
+  var url = BOOKING[type];
+  if (url) { var b = document.getElementById("bk-button"); b.href = url; b.style.display = "inline-block"; }
+  else { document.getElementById("bk-fallback").style.display = "block"; }
+})();
+</script>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Gable &amp; Grace</h4>
+        <p style="max-width:38ch; color:var(--greige);">A residential design-build company creating beautiful, timeless homes designed for healthier living throughout Raleigh, NC and the Triangle.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="custom-homes.html">Custom Homes</a></li>
+          <li><a href="renovations.html">Renovations</a></li>
+          <li><a href="wellness-spaces.html">Wellness Spaces</a></li>
+          <li><a href="healthy-homes.html">Healthy Homes</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gable &amp; Grace. Raleigh, North Carolina.</span>
+      <span>Residential Design-Build &middot; Healthy Homes</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
